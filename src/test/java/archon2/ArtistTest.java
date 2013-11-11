@@ -1,7 +1,10 @@
 package archon2;
 
+import javax.json.Json;
+import javax.json.JsonObject;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
 
 import org.glassfish.grizzly.http.server.HttpServer;
@@ -11,7 +14,7 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public class MyResourceTest {
+public class ArtistTest {
 
     private HttpServer server;
     private WebTarget target;
@@ -37,12 +40,12 @@ public class MyResourceTest {
         server.stop();
     }
 
-    /**
-     * Test to see that the message "Got it!" is sent in the response.
-     */
     @Test
-    public void testGetIt() {
-        String responseMsg = target.path("myresource").request().get(String.class);
-        assertEquals("Got it!", responseMsg);
+    public void artistCreate() {
+        JsonObject js = Json.createObjectBuilder().add("name", "epica").build();
+        JsonObject res = target.path("/artist/add").request().post(Entity.json(js)).readEntity(JsonObject.class);
+
+        assertEquals(res.getString("name"), "epica");
     }
 }
+

@@ -6,8 +6,6 @@ import org.glassfish.jersey.server.ResourceConfig;
 
 import java.io.IOException;
 import java.net.URI;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Main class.
@@ -25,6 +23,7 @@ public class Main {
         // create a resource config that scans for JAX-RS resources and providers
         // in archon2 package
         final ResourceConfig rc = new ResourceConfig().packages("archon2");
+
 
 
         // create and start a new instance of grizzly http server
