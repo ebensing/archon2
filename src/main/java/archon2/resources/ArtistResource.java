@@ -18,7 +18,7 @@ import javax.ws.rs.core.MediaType;
 @Path("/artist")
 public class ArtistResource {
 
-    private MongoResource mr = MongoResource.INSTANCE;
+    private Datastore db = MongoResource.INSTANCE.getDatastore("archon");
 
     @POST
     @Path("/add")
@@ -29,10 +29,7 @@ public class ArtistResource {
 
         art.setName(jo.getString("name"));
 
-
-        Datastore db = this.mr.getDatastore("archon");
-
-        Query<Artist> q = db.find(Artist.class);
+        Query<Artist> q = this.db.find(Artist.class);
         try {
             q = art.createQuery(new String[]{"name"}, db);
         } catch (Exception e) {
@@ -42,9 +39,22 @@ public class ArtistResource {
         UpdateOperations<Artist> op = art.getUpdate(db);
 
 
-        db.findAndModify(q, op, false, true);
+        this.db.findAndModify(q, op, false, true);
 
         return art.toString();
 
+    }
+
+    @POST
+    @Path("/add/new")
+    @Consumes("application/json")
+    @Produces(MediaType.APPLICATION_JSON)
+    public String addNewArtist(final JsonObject req) {
+        Artist art = new Artist();
+
+        art.setName(req.getString("name"));
+        this.db.save(art);
+
+        return art.toString();
     }
 }
