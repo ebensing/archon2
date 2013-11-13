@@ -1,5 +1,8 @@
 package archon2.resources;
 
+import archon2.actors.ActorController;
+import archon2.actors.ActorMessage;
+import archon2.actors.ActorMessageTypes;
 import archon2.data.Artist;
 import archon2.data.MongoResource;
 import org.mongodb.morphia.Datastore;
@@ -22,36 +25,19 @@ public class ArtistResource {
 
     private static Datastore db = MongoResource.INSTANCE.getDatastore("archon");
 
+
     @POST
     @Path("/add")
     @Consumes("application/json")
     @Produces(MediaType.APPLICATION_JSON)
     public void addArtist(final JsonObject jo, @Suspended final AsyncResponse asyncResponse) {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
+        // json parsing, this can be factored out for an actual Json lib
+        Artist art = new Artist(true);
+        art.setName(jo.getString("name"));
 
-                Artist art = new Artist(true);
-
-                art.setName(jo.getString("name"));
-
-                Query<Artist> q = ArtistResource.db.find(Artist.class);
-                try {
-                    q = art.createQuery(new String[]{"name"}, db);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-
-                UpdateOperations<Artist> op = art.getUpdate(db);
-
-
-                ArtistResource.db.findAndModify(q, op, false, true);
-
-                asyncResponse.resume(art.toString());
-
-            }
-        }
-        ).start();
+        // create the message and send it to our actor
+        ActorMessage msg = new ActorMessage(ActorMessageTypes.CREATE, art, asyncResponse);
+        ActorController.artistActor.tell(msg, ActorController.artistActor);
     }
 
     @POST
