@@ -8,6 +8,8 @@ import org.mongodb.morphia.query.UpdateOperations;
 
 import javax.json.JsonObject;
 import javax.ws.rs.*;
+import javax.ws.rs.container.AsyncResponse;
+import javax.ws.rs.container.Suspended;
 import javax.ws.rs.core.MediaType;
 
 /**
@@ -18,31 +20,38 @@ import javax.ws.rs.core.MediaType;
 @Path("/artist")
 public class ArtistResource {
 
-    private Datastore db = MongoResource.INSTANCE.getDatastore("archon");
+    private static Datastore db = MongoResource.INSTANCE.getDatastore("archon");
 
     @POST
     @Path("/add")
     @Consumes("application/json")
     @Produces(MediaType.APPLICATION_JSON)
-    public String addArtist(final JsonObject jo) {
-        Artist art = new Artist(true);
+    public void addArtist(final JsonObject jo, @Suspended final AsyncResponse asyncResponse) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
 
-        art.setName(jo.getString("name"));
+                Artist art = new Artist(true);
 
-        Query<Artist> q = this.db.find(Artist.class);
-        try {
-            q = art.createQuery(new String[]{"name"}, db);
-        } catch (Exception e) {
-            e.printStackTrace();
+                art.setName(jo.getString("name"));
+
+                Query<Artist> q = ArtistResource.db.find(Artist.class);
+                try {
+                    q = art.createQuery(new String[]{"name"}, db);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+                UpdateOperations<Artist> op = art.getUpdate(db);
+
+
+                ArtistResource.db.findAndModify(q, op, false, true);
+
+                asyncResponse.resume(art.toString());
+
+            }
         }
-
-        UpdateOperations<Artist> op = art.getUpdate(db);
-
-
-        this.db.findAndModify(q, op, false, true);
-
-        return art.toString();
-
+        ).start();
     }
 
     @POST

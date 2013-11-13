@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d79a560c-18bf-4484-8b07-9457f28a8ebe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" afterPath="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java" afterPath="$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/EJ.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/EJ.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archon2.iws" />
@@ -12,10 +10,10 @@
     <file path="/fragment.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384153580323" ignored="false" />
     <file path="/AddArtist.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384128336726" ignored="false" />
     <file path="/Artist.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384207233695" ignored="false" />
-    <file path="/ArtistResource.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384212571825" ignored="false" />
+    <file path="/ArtistResource.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384313618684" ignored="false" />
     <file path="/pom.xml" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384154692577" ignored="false" />
     <file path="/Main.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384180735155" ignored="false" />
-    <file path="/Dummy.txt" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384207258559" ignored="false" />
+    <file path="/Dummy.txt" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384313371265" ignored="false" />
     <file path="/ArtistTest.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384212805999" ignored="false" />
     <file path="/JsonArtist.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384180599892" ignored="false" />
     <file path="/a.dummy" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384212736550" ignored="false" />
@@ -33,6 +31,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -69,7 +68,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -97,11 +95,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArtistResource.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ArtistResource.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="0" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="33" column="46" selection-start="914" selection-end="914" vertical-scroll-proportion="0.32582322">
+              <folding>
+                <element signature="e#796#1444#0" expanded="true" />
+                <element signature="e#1433#1434#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,18 +111,15 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/archon2/data/Artist.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="121" column="16" selection-start="2831" selection-end="2831" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#663#680#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArtistTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ArtistTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="0" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.65684575">
+            <state line="51" column="24" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,8 +162,8 @@
         <option value="$PROJECT_DIR$/src/main/java/archon2/json/JsonArtist.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/data/Artist.java" />
-        <option value="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" />
         <option value="$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" />
       </list>
     </option>
   </component>
@@ -241,7 +239,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -375,6 +372,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,14 +382,15 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../archon3" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -451,19 +450,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -489,6 +475,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -605,7 +604,11 @@
       <created>1384207261460</created>
       <updated>1384207261460</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="improved tests, added new force add method">
+      <created>1384212850696</created>
+      <updated>1384212850696</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -629,7 +632,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32850778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -696,7 +699,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="made some helper methods for morphia class to make more useful" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved tests, added new force add method" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -713,6 +716,7 @@
     <MESSAGE value="update config files" />
     <MESSAGE value="working test for create" />
     <MESSAGE value="made some helper methods for morphia class to make more useful" />
+    <MESSAGE value="improved tests, added new force add method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -722,6 +726,39 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#796#1444#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/data/Artist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="16" selection-start="2831" selection-end="2831" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/data/MongoResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="69" column="21" selection-start="2492" selection-end="2492" vertical-scroll-proportion="0.0">
@@ -732,7 +769,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#796#1444#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -746,10 +786,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/archon2/data/Artist.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="1" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#663#680#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -793,25 +830,25 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/archon2/data/Artist.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="121" column="16" selection-start="2831" selection-end="2831" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#663#680#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.65684575">
+        <state line="51" column="24" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="46" selection-start="914" selection-end="914" vertical-scroll-proportion="0.32582322">
+          <folding>
+            <element signature="e#796#1444#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
           </folding>
         </state>
       </provider>
