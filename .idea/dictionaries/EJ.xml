@@ -2,8 +2,10 @@
   <dictionary name="EJ">
     <words>
       <w>archon</w>
+      <w>datastore</w>
       <w>epica</w>
       <w>forcecreate</w>
+      <w>mongo</w>
       <w>wintersun</w>
     </words>
   </dictionary>
