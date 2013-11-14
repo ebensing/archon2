@@ -6,11 +6,12 @@ import archon2.actors.ActorMessageTypes;
 import archon2.data.Artist;
 import archon2.data.MongoResource;
 import org.mongodb.morphia.Datastore;
-import org.mongodb.morphia.query.Query;
-import org.mongodb.morphia.query.UpdateOperations;
 
 import javax.json.JsonObject;
-import javax.ws.rs.*;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 import javax.ws.rs.container.AsyncResponse;
 import javax.ws.rs.container.Suspended;
 import javax.ws.rs.core.MediaType;
@@ -48,7 +49,7 @@ public class ArtistResource {
         Artist art = new Artist();
 
         art.setName(req.getString("name"));
-        this.db.save(art);
+        db.save(art);
 
         return art.toString();
     }

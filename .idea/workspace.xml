@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d79a560c-18bf-4484-8b07-9457f28a8ebe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/archon2/actors/DispatchMethod.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/archon2/actors/ArtistActor.java" afterPath="$PROJECT_DIR$/src/main/java/archon2/actors/ArtistActor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" afterPath="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archon2.iws" />
@@ -11,14 +11,14 @@
     <file path="/fragment.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384367369194" ignored="false" />
     <file path="/AddArtist.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384128336726" ignored="false" />
     <file path="/Artist.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384393244633" ignored="false" />
-    <file path="/ArtistResource.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384382388382" ignored="false" />
+    <file path="/ArtistResource.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384394896052" ignored="false" />
     <file path="/pom.xml" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384365781453" ignored="false" />
     <file path="/Main.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384180735155" ignored="false" />
-    <file path="/Dummy.txt" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384385560754" ignored="false" />
+    <file path="/Dummy.txt" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384394774681" ignored="false" />
     <file path="/ArtistTest.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384212805999" ignored="false" />
     <file path="/JsonArtist.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384180599892" ignored="false" />
     <file path="/a.dummy" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384212736550" ignored="false" />
-    <file path="/ArtistActor.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384394683831" ignored="false" />
+    <file path="/ArtistActor.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384394829732" ignored="false" />
     <file path="/ActorSystem.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384366419239" ignored="false" />
     <file path="/ActorController.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384367916271" ignored="false" />
     <file path="/ActorMessage.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384367078402" ignored="false" />
@@ -94,13 +94,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArtistActor.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ArtistActor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/ArtistActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="21" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.30276817">
+            <state line="54" column="16" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#853#880#0" expanded="true" />
+                <element signature="e#632#659#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,11 +166,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArtistResource.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ArtistResource.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="11" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="33" column="22" selection-start="816" selection-end="816" vertical-scroll-proportion="0.6557093">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -214,11 +216,11 @@
         <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ActorMessageTypes.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ActorMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ActorController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/data/Artist.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/data/AbstractModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ArtistActor.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/actors/DispatchMethod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ArtistActor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" />
       </list>
     </option>
   </component>
@@ -723,7 +725,11 @@
       <created>1384385564434</created>
       <updated>1384385564434</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added DispatchMethod annotation">
+      <created>1384394780402</created>
+      <updated>1384394780402</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -814,7 +820,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved to using akka" />
+    <option name="LAST_COMMIT_MESSAGE" value="added DispatchMethod annotation" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -834,6 +840,7 @@
     <MESSAGE value="improved tests, added new force add method" />
     <MESSAGE value="made createArtist method async" />
     <MESSAGE value="moved to using akka" />
+    <MESSAGE value="added DispatchMethod annotation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -846,7 +853,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -922,13 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="11" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/archon2/data/Artist.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="127" column="28" selection-start="3010" selection-end="3010" vertical-scroll-proportion="0.0">
@@ -956,10 +958,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/ArtistActor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="21" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.30276817">
+        <state line="54" column="16" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#853#880#0" expanded="true" />
+            <element signature="e#632#659#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="22" selection-start="816" selection-end="816" vertical-scroll-proportion="0.6557093">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,25 +1,19 @@
 package archon2.actors;
 
-import akka.actor.Props;
 import akka.actor.UntypedActor;
 import archon2.data.Artist;
 import archon2.data.MongoResource;
-import archon2.resources.ArtistResource;
 import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.query.Query;
 import org.mongodb.morphia.query.UpdateOperations;
 
 import java.lang.reflect.Method;
-import java.util.Dictionary;
-import java.util.Enumeration;
 import java.util.HashMap;
 
 /**
- * Created with IntelliJ IDEA.
  * User: EJ
  * Date: 11/13/13
  * Time: 1:03 PM
- * To change this template use File | Settings | File Templates.
  */
 public class ArtistActor extends UntypedActor {
 
