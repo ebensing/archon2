@@ -30,10 +30,18 @@ public class ArtistActor extends UntypedActor {
         HashMap<ActorMessageTypes, Method> tmp = new HashMap<ActorMessageTypes, Method>();
 
         Class[] params = new Class[] { ActorMessage.class};
-        try {
-            tmp.put(ActorMessageTypes.CREATE, ArtistActor.class.getDeclaredMethod("createArtist", params));
-        } catch (Exception e) {
-            e.printStackTrace();
+
+        Method[] methods = ArtistActor.class.getMethods();
+
+        for(Method m : methods) {
+            if (m.isAnnotationPresent(DispatchMethod.class)) {
+                DispatchMethod dispatchMethod = m.getAnnotation(DispatchMethod.class);
+                try {
+                    tmp.put(dispatchMethod.type(), m);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
         }
 
         dispatch = tmp;
@@ -49,6 +57,7 @@ public class ArtistActor extends UntypedActor {
         }
     }
 
+    @DispatchMethod(type=ActorMessageTypes.CREATE)
     public void createArtist(ActorMessage message) {
         Query<Artist> q = db.find(Artist.class);
         try {
