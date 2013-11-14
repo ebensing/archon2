@@ -5,6 +5,7 @@ package archon2.actors;
  * Date: 11/13/13
  * Time: 1:18 PM
  */
-public enum ActorMessageTypes {
-    CREATE
+public enum ArtistMessageTypes {
+    CREATE,
+    FORCECREATE
 }

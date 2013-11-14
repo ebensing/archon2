@@ -2,10 +2,8 @@ package archon2.resources;
 
 import archon2.actors.ActorController;
 import archon2.actors.ActorMessage;
-import archon2.actors.ActorMessageTypes;
+import archon2.actors.ArtistMessageTypes;
 import archon2.data.Artist;
-import archon2.data.MongoResource;
-import org.mongodb.morphia.Datastore;
 
 import javax.json.JsonObject;
 import javax.ws.rs.Consumes;
@@ -24,9 +22,6 @@ import javax.ws.rs.core.MediaType;
 @Path("/artist")
 public class ArtistResource {
 
-    private static Datastore db = MongoResource.INSTANCE.getDatastore("archon");
-
-
     @POST
     @Path("/add")
     @Consumes("application/json")
@@ -37,7 +32,7 @@ public class ArtistResource {
         art.setName(jo.getString("name"));
 
         // create the message and send it to our actor
-        ActorMessage msg = new ActorMessage(ActorMessageTypes.CREATE, art, asyncResponse);
+        ActorMessage msg = new ActorMessage(ArtistMessageTypes.CREATE, art, asyncResponse);
         ActorController.artistActor.tell(msg, ActorController.artistActor);
     }
 
@@ -45,12 +40,10 @@ public class ArtistResource {
     @Path("/add/new")
     @Consumes("application/json")
     @Produces(MediaType.APPLICATION_JSON)
-    public String addNewArtist(final JsonObject req) {
+    public void addNewArtist(final JsonObject req, @Suspended final AsyncResponse asyncResponse) {
         Artist art = new Artist();
-
         art.setName(req.getString("name"));
-        db.save(art);
-
-        return art.toString();
+        ActorMessage msg = new ActorMessage(ArtistMessageTypes.FORCECREATE, art, asyncResponse);
+        ActorController.artistActor.tell(msg, ActorController.artistActor);
     }
 }

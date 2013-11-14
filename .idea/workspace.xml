@@ -2,29 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d79a560c-18bf-4484-8b07-9457f28a8ebe" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/archon2/actors/ActorController.java" afterPath="$PROJECT_DIR$/src/main/java/archon2/actors/ActorController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/archon2/actors/ActorMessage.java" afterPath="$PROJECT_DIR$/src/main/java/archon2/actors/ActorMessage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/archon2/actors/ArtistActor.java" afterPath="$PROJECT_DIR$/src/main/java/archon2/actors/ArtistActor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" afterPath="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/archon2/actors/DispatchMethod.java" afterPath="$PROJECT_DIR$/src/main/java/archon2/actors/DispatchMethod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/EJ.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/EJ.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="Z:\Projects\archon2\src\main\java\archon2\actors\ActorMessageTypes.java" afterPath="$PROJECT_DIR$/src/main/java/archon2/actors/ArtistMessageTypes.java" />
     </list>
     <ignored path="archon2.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384367369194" ignored="false" />
     <file path="/AddArtist.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384128336726" ignored="false" />
     <file path="/Artist.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384393244633" ignored="false" />
-    <file path="/ArtistResource.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384394896052" ignored="false" />
+    <file path="/ArtistResource.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384400602760" ignored="false" />
     <file path="/pom.xml" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384365781453" ignored="false" />
     <file path="/Main.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384180735155" ignored="false" />
-    <file path="/Dummy.txt" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384395126499" ignored="false" />
+    <file path="/Dummy.txt" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384401992006" ignored="false" />
     <file path="/ArtistTest.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384212805999" ignored="false" />
     <file path="/JsonArtist.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384180599892" ignored="false" />
     <file path="/a.dummy" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384212736550" ignored="false" />
-    <file path="/ArtistActor.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384395102785" ignored="false" />
+    <file path="/ArtistActor.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384401950817" ignored="false" />
     <file path="/ActorSystem.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384366419239" ignored="false" />
-    <file path="/ActorController.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384367916271" ignored="false" />
+    <file path="/ActorController.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384402431921" ignored="false" />
     <file path="/ActorMessage.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384367078402" ignored="false" />
     <file path="/ActorMessageTypes.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384366797364" ignored="false" />
     <file path="/AbstractModel.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384393731404" ignored="false" />
     <file path="/DispatchMethod.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384395135758" ignored="false" />
+    <file path="/ArtistMessageTypes.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384400508668" ignored="false" />
+    <file path="/ArtistActorCreator.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384402321991" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,20 +95,17 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="27" selection-start="2675" selection-end="2675" vertical-scroll-proportion="0.0">
+            <state line="64" column="34" selection-start="2303" selection-end="2303" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArtistActor.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ArtistActor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/ArtistActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="15" selection-start="739" selection-end="739" vertical-scroll-proportion="0.23529412">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#632#659#0" expanded="true" />
-              </folding>
+            <state line="65" column="28" selection-start="2022" selection-end="2022" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,9 +114,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/DispatchMethod.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="11" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -121,9 +123,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/ActorMessage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,45 +131,34 @@
       <file leaf-file-name="Artist.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/archon2/data/Artist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="28" selection-start="3010" selection-end="3010" vertical-scroll-proportion="0.0">
+            <state line="32" column="21" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActorMessageTypes.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/ActorMessageTypes.java">
+      <file leaf-file-name="MongoResource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/archon2/data/MongoResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+            <state line="46" column="0" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActorController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ArtistMessageTypes.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/ArtistMessageTypes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="9" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActorController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/ActorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="69" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/archon2/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="18" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArtistResource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="22" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
+            <state line="25" column="1" selection-start="576" selection-end="576" vertical-scroll-proportion="0.7352941">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,7 +169,7 @@
       <file leaf-file-name="ArtistTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="185" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.0">
+            <state line="68" column="77" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -205,8 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/archon2/resources/AddArtist.java" />
-        <option value="$PROJECT_DIR$/src/main/java/archon2/resources/Artist.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/data/JsonArtist.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/json/JsonArtist.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/Main.java" />
@@ -215,12 +202,14 @@
         <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ActorSystem.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ActorMessageTypes.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ActorMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ActorController.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/data/Artist.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/data/AbstractModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/actors/DispatchMethod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ArtistMessageTypes.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ArtistActor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ArtistActorCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ActorController.java" />
       </list>
     </option>
   </component>
@@ -319,7 +308,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -480,8 +468,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archon2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archon2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archon2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ActorController.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -497,9 +520,9 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -559,19 +582,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -597,6 +607,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -733,7 +756,11 @@
       <created>1384394938137</created>
       <updated>1384394938137</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="cleaned more stuff">
+      <created>1384395178883</created>
+      <updated>1384395178883</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -765,7 +792,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850778" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29287305" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.42761692" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33073497" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -856,15 +883,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/archon2/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="18" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0">
@@ -900,23 +918,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="77" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/DispatchMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/data/Artist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="21" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="27" selection-start="2675" selection-end="2675" vertical-scroll-proportion="0.0">
+        <state line="64" column="34" selection-start="2303" selection-end="2303" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/archon2/data/MongoResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="185" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.0">
+        <state line="46" column="0" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -924,59 +956,36 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/ActorMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/ActorMessageTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/data/Artist.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/ArtistMessageTypes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="28" selection-start="3010" selection-end="3010" vertical-scroll-proportion="0.0">
+        <state line="9" column="9" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/ArtistActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="28" selection-start="2022" selection-end="2022" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/ActorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="69" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
+        <state line="25" column="1" selection-start="576" selection-end="576" vertical-scroll-proportion="0.7352941">
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="22" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/DispatchMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/actors/ArtistActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="15" selection-start="739" selection-end="739" vertical-scroll-proportion="0.23529412">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#632#659#0" expanded="true" />
           </folding>
         </state>
       </provider>

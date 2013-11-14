@@ -19,10 +19,9 @@ public class ArtistActor extends UntypedActor {
 
     private Datastore db = MongoResource.INSTANCE.getDatastore("archon");
 
-    private static final HashMap<ActorMessageTypes, Method> dispatch;
+    private static final HashMap<ArtistMessageTypes, Method> dispatch;
     static {
-        HashMap<ActorMessageTypes, Method> tmp = new HashMap<ActorMessageTypes, Method>();
-
+        HashMap<ArtistMessageTypes, Method> tmp = new HashMap<ArtistMessageTypes, Method>();
         Method[] methods = ArtistActor.class.getMethods();
 
         for(Method m : methods) {
@@ -49,7 +48,8 @@ public class ArtistActor extends UntypedActor {
         }
     }
 
-    @DispatchMethod(ActorMessageTypes.CREATE)
+    @SuppressWarnings("unused")
+    @DispatchMethod(ArtistMessageTypes.CREATE)
     public void createArtist(ActorMessage message) {
         Query<Artist> q = db.find(Artist.class);
         try {
@@ -60,6 +60,13 @@ public class ArtistActor extends UntypedActor {
 
         UpdateOperations<Artist> op = message.artist.getUpdate(db);
         db.findAndModify(q, op, false, true);
+        message.asyncResponse.resume(message.artist.toString());
+    }
+
+    @SuppressWarnings("unused")
+    @DispatchMethod(ArtistMessageTypes.FORCECREATE)
+    public void forceCreateArtist(ActorMessage message) {
+        db.save(message.artist);
         message.asyncResponse.resume(message.artist.toString());
     }
 }

@@ -13,11 +13,11 @@ import javax.ws.rs.container.AsyncResponse;
 
 public class ActorMessage {
 
-    public final ActorMessageTypes type;
+    public final ArtistMessageTypes type;
     public final AsyncResponse asyncResponse;
     public final Artist artist;
 
-    public ActorMessage(ActorMessageTypes type, Artist artist, AsyncResponse response) {
+    public ActorMessage(ArtistMessageTypes type, Artist artist, AsyncResponse response) {
         this.type = type;
         this.artist = artist;
         this.asyncResponse = response;
