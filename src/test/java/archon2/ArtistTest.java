@@ -7,14 +7,19 @@ import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
 
-import archon2.data.Artist;
-import archon2.data.MongoResource;
+import ArchonData.data.Artist;
+import ArchonData.data.MongoResource;
+import ArchonData.server.DataServer;
 import org.glassfish.grizzly.http.server.HttpServer;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.mongodb.morphia.Datastore;
+
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
 
 import static org.junit.Assert.assertEquals;
 
@@ -23,6 +28,7 @@ public class ArtistTest {
     private HttpServer server;
     private WebTarget target;
     private Datastore ds = MongoResource.INSTANCE.getDatastore("archon");
+    private Registry reg = null;
 
     @Before
     public void setUp() throws Exception {
@@ -38,14 +44,16 @@ public class ArtistTest {
         // c.configuration().enable(new org.glassfish.jersey.media.json.JsonJaxbFeature());
 
         target = c.target(Main.BASE_URI);
-
-        ds.delete(ds.createQuery(Artist.class));
+        reg = LocateRegistry.createRegistry(3809);
+        DataServer svr =  new DataServer();
+        reg.bind("DataService", svr);
     }
 
     @After
     public void tearDown() throws Exception {
         ds.delete(ds.createQuery(Artist.class));
         server.stop();
+        UnicastRemoteObject.unexportObject(reg, true);
     }
 
     @Test
@@ -58,9 +66,6 @@ public class ArtistTest {
         assertEquals(res1.getString("name"), name);
         assertEquals(res2.getString("name"), name);
 
-        long count = this.ds.find(Artist.class).field("name").equal(name).countAll();
-
-        assertEquals(count, 1);
     }
 
     @Test
@@ -72,10 +77,6 @@ public class ArtistTest {
 
         assertEquals(res1.getString("name"), name);
         assertEquals(res2.getString("name"), name);
-
-        long count = this.ds.find(Artist.class).field("name").equal(name).countAll();
-
-        assertEquals(count, 2);
 
     }
 }

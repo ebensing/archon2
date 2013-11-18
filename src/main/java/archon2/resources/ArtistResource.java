@@ -1,11 +1,8 @@
 package archon2.resources;
 
-import archon2.data.Artist;
-import archon2.data.MongoResource;
+import ArchonData.main;
+import ArchonData.server.DataService;
 import org.glassfish.jersey.server.ManagedAsync;
-import org.mongodb.morphia.Datastore;
-import org.mongodb.morphia.query.Query;
-import org.mongodb.morphia.query.UpdateOperations;
 import util.JsonHelper;
 
 import javax.ws.rs.Consumes;
@@ -15,6 +12,12 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.container.AsyncResponse;
 import javax.ws.rs.container.Suspended;
 import javax.ws.rs.core.MediaType;
+import ArchonData.data.Artist;
+
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
 
 /**
  * User: EJ
@@ -24,7 +27,19 @@ import javax.ws.rs.core.MediaType;
 @Path("/artist")
 public class ArtistResource {
 
-    private Datastore db = MongoResource.INSTANCE.getDatastore("archon");
+    private DataService db;
+
+    public ArtistResource() {
+        try {
+            Registry reg = LocateRegistry.getRegistry(main.port);
+            this.db = (DataService) reg.lookup("DataService");
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        } catch (NotBoundException e) {
+            e.printStackTrace();
+        }
+
+    }
 
     @POST
     @Path("/add")
@@ -33,16 +48,12 @@ public class ArtistResource {
     @ManagedAsync
     public void addArtist(final String jo, @Suspended final AsyncResponse asyncResponse) {
         Artist art = JsonHelper.parseJson(jo, Artist.class);
-        Query<Artist> q = db.find(Artist.class);
         try {
-            q = art.createQuery(new String[]{"name"}, db);
-        } catch (Exception e) {
+            db.addArtist(art);
+        } catch (RemoteException e) {
             e.printStackTrace();
         }
-
-        UpdateOperations<Artist> op = art.getUpdate(db);
-        db.findAndModify(q, op, false, true);
-        asyncResponse.resume(art.toString());
+        asyncResponse.resume(JsonHelper.stringify(art));
     }
 
     @POST
@@ -52,7 +63,11 @@ public class ArtistResource {
     @ManagedAsync
     public void addNewArtist(final String req, @Suspended final AsyncResponse asyncResponse) {
         Artist art = JsonHelper.parseJson(req, Artist.class);
-        db.save(art);
-        asyncResponse.resume(art.toString());
+        try {
+            art = db.forceAddArtist(art);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        asyncResponse.resume(JsonHelper.stringify(art));
     }
 }
