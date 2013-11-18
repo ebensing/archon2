@@ -1,10 +1,12 @@
 package archon2.resources;
 
-import archon2.actors.ActorController;
-import archon2.actors.ActorMessage;
-import archon2.actors.ArtistMessageTypes;
 import archon2.data.Artist;
-import org.codehaus.jackson.map.ObjectMapper;
+import archon2.data.MongoResource;
+import org.glassfish.jersey.server.ManagedAsync;
+import org.mongodb.morphia.Datastore;
+import org.mongodb.morphia.query.Query;
+import org.mongodb.morphia.query.UpdateOperations;
+import util.JsonHelper;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
@@ -22,37 +24,35 @@ import javax.ws.rs.core.MediaType;
 @Path("/artist")
 public class ArtistResource {
 
-    private ObjectMapper objectMapper = new ObjectMapper();
+    private Datastore db = MongoResource.INSTANCE.getDatastore("archon");
 
     @POST
     @Path("/add")
     @Consumes("application/json")
     @Produces(MediaType.APPLICATION_JSON)
+    @ManagedAsync
     public void addArtist(final String jo, @Suspended final AsyncResponse asyncResponse) {
-        Artist art = null;
+        Artist art = JsonHelper.parseJson(jo, Artist.class);
+        Query<Artist> q = db.find(Artist.class);
         try {
-            art = objectMapper.readValue(jo, Artist.class);
+            q = art.createQuery(new String[]{"name"}, db);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        // create the message and send it to our actor
-        ActorMessage msg = new ActorMessage(ArtistMessageTypes.CREATE, art, asyncResponse);
-        ActorController.artistActor.tell(msg, ActorController.artistActor);
+        UpdateOperations<Artist> op = art.getUpdate(db);
+        db.findAndModify(q, op, false, true);
+        asyncResponse.resume(art.toString());
     }
 
     @POST
     @Path("/add/new")
     @Consumes("application/json")
     @Produces(MediaType.APPLICATION_JSON)
+    @ManagedAsync
     public void addNewArtist(final String req, @Suspended final AsyncResponse asyncResponse) {
-        Artist art = null;
-        try {
-            art = objectMapper.readValue(req, Artist.class);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        ActorMessage msg = new ActorMessage(ArtistMessageTypes.FORCECREATE, art, asyncResponse);
-        ActorController.artistActor.tell(msg, ActorController.artistActor);
+        Artist art = JsonHelper.parseJson(req, Artist.class);
+        db.save(art);
+        asyncResponse.resume(art.toString());
     }
 }

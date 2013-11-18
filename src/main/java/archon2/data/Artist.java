@@ -1,12 +1,12 @@
 package archon2.data;
 
 import org.bson.types.ObjectId;
-import org.codehaus.jackson.map.ObjectMapper;
 import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
 import org.mongodb.morphia.query.Query;
 import org.mongodb.morphia.query.UpdateOperations;
+import util.JsonHelper;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
@@ -108,14 +108,7 @@ public class Artist {
 
     @Override
     public String toString() {
-        ObjectMapper mapper = new ObjectMapper();
-        String json = null;
-        try {
-        json = mapper.writeValueAsString(this);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return json;
+        return JsonHelper.stringify(this);
     }
 
     public Query<Artist> createQuery(String[] fields, Datastore db) throws NoSuchFieldException, IllegalAccessException {
