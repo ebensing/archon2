@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d79a560c-18bf-4484-8b07-9457f28a8ebe" name="Default" comment="removed Akka and moved to Jersey's ManagedAsync">
-      <change type="DELETED" beforePath="Z:\Projects\archon2\src\main\java\archon2\data\Artist.java" afterPath="" />
-      <change type="DELETED" beforePath="Z:\Projects\archon2\src\main\java\archon2\data\MongoResource.java" afterPath="" />
+    <list default="true" id="d79a560c-18bf-4484-8b07-9457f28a8ebe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/archon2/responses/ArtistList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" afterPath="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java" afterPath="$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/archon2/Main.java" afterPath="$PROJECT_DIR$/src/main/java/archon2/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archon2.iml" afterPath="$PROJECT_DIR$/archon2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archon2.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384367369194" ignored="false" />
     <file path="/AddArtist.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384128336726" ignored="false" />
-    <file path="/Artist.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384750179389" ignored="false" />
-    <file path="/ArtistResource.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384750440023" ignored="false" />
-    <file path="/pom.xml" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384365781453" ignored="false" />
-    <file path="/Main.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384180735155" ignored="false" />
-    <file path="/Dummy.txt" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384750566306" ignored="false" />
-    <file path="/ArtistTest.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384749221519" ignored="false" />
+    <file path="/Artist.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384920806351" ignored="false" />
+    <file path="/ArtistResource.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384920253296" ignored="false" />
+    <file path="/pom.xml" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384836174544" ignored="false" />
+    <file path="/Main.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384838633800" ignored="false" />
+    <file path="/Dummy.txt" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384921148872" ignored="false" />
+    <file path="/ArtistTest.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384920427600" ignored="false" />
     <file path="/JsonArtist.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384180599892" ignored="false" />
     <file path="/a.dummy" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384212736550" ignored="false" />
     <file path="/ArtistActor.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384401950817" ignored="false" />
@@ -35,7 +35,13 @@
     <file path="/ArtistActorCreator.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384402321991" ignored="false" />
     <file path="/JsonHelper.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384744238996" ignored="false" />
     <file path="/main.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384750389750" ignored="false" />
-    <file path="/ServiceTest.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384750414355" ignored="false" />
+    <file path="/ServiceTest.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384834665224" ignored="false" />
+    <file path="/DataService.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384834564105" ignored="false" />
+    <file path="/DataServer.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384834610746" ignored="false" />
+    <file path="/ArtistList.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384838176442" ignored="false" />
+    <file path="/ObjectMapperProvider.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384838901194" ignored="false" />
+    <file path="/ObjectIdJsonSerializer.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384918661579" ignored="false" />
+    <file path="/ObjectIdJsonDeserializer.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384920756285" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,10 +103,21 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ArchonData/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="59" column="0" selection-start="2102" selection-end="2102" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <marker date="1384838978331" expanded="true" signature="2309:2456" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,25 +125,22 @@
       <file leaf-file-name="Artist.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/Artist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="31" column="42" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1171#1209#0" expanded="true" />
+                <element signature="e#1925#1963#0" expanded="true" />
+                <element signature="e#2026#2064#0" expanded="true" />
+                <element signature="e#2335#2373#0" expanded="true" />
+                <element signature="e#2433#2471#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/JsonHelper.java">
+      <file leaf-file-name="ObjectIdJsonDeserializer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/util/ObjectIdJsonDeserializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="31" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArtistResource.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1045" selection-end="1045" vertical-scroll-proportion="0.9928315">
+            <state line="23" column="49" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,10 +148,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ArchonData/src/test/java/ArchonData/ServiceTest.java">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/archon2/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="52" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
+            <state line="41" column="18" selection-start="1401" selection-end="1401" vertical-scroll-proportion="1.1899642">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArtistResource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="167" column="18" selection-start="4695" selection-end="4695" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,19 +173,29 @@
       <file leaf-file-name="ArtistTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="29" selection-start="1641" selection-end="1641" vertical-scroll-proportion="0.0">
+            <state line="185" column="45" selection-start="7388" selection-end="7388" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#setUp#0;class#ArtistTest#0" expanded="false" />
+                <element signature="method#tearDown#0;class#ArtistTest#0" expanded="false" />
+                <element signature="method#artistCreate#0;class#ArtistTest#0" expanded="false" />
+                <element signature="method#artistCreateNew#0;class#ArtistTest#0" expanded="false" />
+                <element signature="method#getArtistByName#0;class#ArtistTest#0" expanded="false" />
+                <element signature="method#getArtistById#0;class#ArtistTest#0" expanded="false" />
+                <element signature="method#getAllArtists#0;class#ArtistTest#0" expanded="false" />
+                <element signature="method#testDeleteAllArtists#0;class#ArtistTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/main.java">
+      <file leaf-file-name="ServiceTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ArchonData/src/test/java/ArchonData/ServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="44" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="126" column="2" selection-start="3314" selection-end="3314" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,22 +219,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ActorMessageTypes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ActorMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/archon2/data/AbstractModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/archon2/actors/DispatchMethod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ArtistMessageTypes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ArtistActor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ArtistActorCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/archon2/actors/ActorController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/JsonHelper.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/archon2/data/Artist.java" />
-        <option value="$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java" />
-        <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/Artist.java" />
         <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/main.java" />
+        <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/server/DataService.java" />
+        <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/server/DataServer.java" />
         <option value="$PROJECT_DIR$/../ArchonData/src/test/java/ArchonData/ServiceTest.java" />
+        <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/MongoResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/archon2/responses/ArtistList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/ObjectMapperProvider.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/archon2/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/ObjectIdJsonSerializer.java" />
+        <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/ObjectIdJsonSerializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" />
+        <option value="$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java" />
+        <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/util/ObjectIdJsonDeserializer.java" />
+        <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/Artist.java" />
+        <option value="$PROJECT_DIR$/../ArchonData/pom.xml" />
       </list>
     </option>
   </component>
@@ -415,6 +450,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="ArchonData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArchonData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archon2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArchonData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArchonData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archon2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="archon2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -519,6 +614,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="responses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archon2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archon2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archon2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -538,7 +663,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="editor.preferences.appearance" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ArchonData/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ArchonData" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -555,44 +680,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ArtistTest">
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="archon2.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="archon2" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MyResourceTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="archon2" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="archon2" />
-      <option name="MAIN_CLASS_NAME" value="archon2.MyResourceTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="ArtistTest.artistCreate" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="archon2" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -640,6 +727,84 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ArchonData [test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/../ArchonData" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ArchonData [package]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/../ArchonData" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ArchonData [deploy]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="deploy" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/../ArchonData" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -781,19 +946,21 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ArtistTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MyResourceTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ArtistTest.artistCreate" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ServiceTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ArtistTest.artistCreate" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ServiceTest" />
+      <item index="3" class="java.lang.String" itemvalue="Maven.ArchonData [test]" />
+      <item index="4" class="java.lang.String" itemvalue="Maven.ArchonData [package]" />
+      <item index="5" class="java.lang.String" itemvalue="Maven.ArchonData [deploy]" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.ServiceTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ArtistTest.artistCreate" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MyResourceTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="Maven.ArchonData [deploy]" />
+        <item index="2" class="java.lang.String" itemvalue="Maven.ArchonData [package]" />
+        <item index="3" class="java.lang.String" itemvalue="Maven.ArchonData [test]" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ArtistTest.artistCreate" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -885,7 +1052,11 @@
       <created>1384745004878</created>
       <updated>1384745004878</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="moved data code out to separate module">
+      <created>1384750687165</created>
+      <updated>1384750687165</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -927,11 +1098,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977587" sideWeight="0.6737194" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6737194" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29287305" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -976,7 +1147,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed Akka and moved to Jersey's ManagedAsync" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished adding support the API and tests" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1003,6 +1174,8 @@
     <MESSAGE value="Added Jackson for JSON, cleaned up code a bit" />
     <MESSAGE value="This is mainly dependencies change stuff" />
     <MESSAGE value="removed Akka and moved to Jersey's ManagedAsync" />
+    <MESSAGE value="moved data code out to separate module" />
+    <MESSAGE value="Finished adding support the API and tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1012,78 +1185,26 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="2102" selection-end="2102" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/JsonHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="31" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="72" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="18" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="15" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#ArtistTest#0" expanded="false" />
+            <element signature="method#tearDown#0;class#ArtistTest#0" expanded="false" />
+            <element signature="method#artistCreate#0;class#ArtistTest#0" expanded="false" />
+            <element signature="method#artistCreateNew#0;class#ArtistTest#0" expanded="false" />
+            <element signature="method#getArtistByName#0;class#ArtistTest#0" expanded="false" />
+            <element signature="method#getArtistById#0;class#ArtistTest#0" expanded="false" />
+            <element signature="method#getAllArtists#0;class#ArtistTest#0" expanded="false" />
+            <element signature="method#testDeleteAllArtists#0;class#ArtistTest#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="18" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/JsonHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="31" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="2102" selection-end="2102" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="29" selection-start="1641" selection-end="1641" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/Artist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1095,18 +1216,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ArchonData/src/test/java/ArchonData/ServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/server/DataService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="52" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
+        <state line="24" column="64" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/MongoResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="34" selection-start="877" selection-end="877" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../ArchonData/src/test/java/ArchonData/ServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="2" selection-start="3314" selection-end="3314" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/responses/ArtistList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="5" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/server/DataServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="69" selection-start="2095" selection-end="2095" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="2102" selection-end="2102" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1384838978331" expanded="true" signature="2309:2456" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/util/ObjectIdJsonSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="14" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1045" selection-end="1045" vertical-scroll-proportion="0.9928315">
+        <state line="167" column="18" selection-start="4695" selection-end="4695" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/util/ObjectIdJsonDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="49" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/Artist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="42" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1171#1209#0" expanded="true" />
+            <element signature="e#1925#1963#0" expanded="true" />
+            <element signature="e#2026#2064#0" expanded="true" />
+            <element signature="e#2335#2373#0" expanded="true" />
+            <element signature="e#2433#2471#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="45" selection-start="7388" selection-end="7388" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#ArtistTest#0" expanded="false" />
+            <element signature="method#tearDown#0;class#ArtistTest#0" expanded="false" />
+            <element signature="method#artistCreate#0;class#ArtistTest#0" expanded="false" />
+            <element signature="method#artistCreateNew#0;class#ArtistTest#0" expanded="false" />
+            <element signature="method#getArtistByName#0;class#ArtistTest#0" expanded="false" />
+            <element signature="method#getArtistById#0;class#ArtistTest#0" expanded="false" />
+            <element signature="method#getAllArtists#0;class#ArtistTest#0" expanded="false" />
+            <element signature="method#testDeleteAllArtists#0;class#ArtistTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ArchonData/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/archon2/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="18" selection-start="1401" selection-end="1401" vertical-scroll-proportion="1.1899642">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
