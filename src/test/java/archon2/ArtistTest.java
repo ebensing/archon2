@@ -1,13 +1,18 @@
 package archon2;
 
 import ArchonData.server.DataServer;
+import ArchonData.server.DataService;
+import archon2.remote.DataResource;
 import org.glassfish.grizzly.http.server.HttpServer;
+import org.glassfish.jersey.SslConfigurator;
+import org.glassfish.jersey.client.filter.HttpBasicAuthFilter;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import javax.json.Json;
 import javax.json.JsonObject;
+import javax.net.ssl.SSLContext;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
@@ -28,8 +33,28 @@ public class ArtistTest {
     public void setUp() throws Exception {
         // start the server
         server = Main.startServer();
+        reg = LocateRegistry.createRegistry(3809);
+        DataServer svr =  new DataServer();
+        reg.bind("DataService", svr);
+
+        // create a test user for authentication
+
+        DataService db = DataResource.getClient();
+        String testPwd = "password";
+        String testUser = "testuser";
+        db.addUser(testUser, testPwd);
+
+        SslConfigurator sslConfigurator = SslConfigurator.newInstance()
+                .trustStoreFile(Main.KEYSTORE_SERVER_FILE)
+                .trustStorePassword("testing");
+
+        final SSLContext sslContext = sslConfigurator.createSSLContext();
+
+
         // create the client
-        Client c = ClientBuilder.newClient();
+        Client c = ClientBuilder.newBuilder().sslContext(sslContext).build();
+
+        c.register(new HttpBasicAuthFilter(testUser, testPwd));
 
         // uncomment the following line if you want to enable
         // support for JSON in the client (you also have to uncomment
@@ -38,14 +63,13 @@ public class ArtistTest {
         // c.configuration().enable(new org.glassfish.jersey.media.json.JsonJaxbFeature());
 
         target = c.target(Main.BASE_URI);
-        reg = LocateRegistry.createRegistry(3809);
-        DataServer svr =  new DataServer();
-        reg.bind("DataService", svr);
     }
 
     @After
     public void tearDown() throws Exception {
         target.path("/artist/delete/all").request().delete().readEntity(JsonObject.class);
+        DataService db = DataResource.getClient();
+        db.deleteAllUsers();
         server.stop();
         UnicastRemoteObject.unexportObject(reg, true);
     }

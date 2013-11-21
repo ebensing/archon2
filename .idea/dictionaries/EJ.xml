@@ -5,8 +5,14 @@
       <w>datastore</w>
       <w>epica</w>
       <w>forcecreate</w>
+      <w>keystore</w>
       <w>mongo</w>
+      <w>notpassword</w>
+      <w>nottest</w>
       <w>stringify</w>
+      <w>testuser</w>
+      <w>tpassword</w>
+      <w>tsalt</w>
       <w>wintersun</w>
     </words>
   </dictionary>

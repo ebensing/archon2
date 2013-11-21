@@ -1,7 +1,8 @@
 package archon2.resources;
 
-import ArchonData.main;
+import ArchonData.data.Artist;
 import ArchonData.server.DataService;
+import archon2.remote.DataResource;
 import archon2.responses.ArtistList;
 import org.bson.types.ObjectId;
 import org.glassfish.jersey.server.ManagedAsync;
@@ -11,12 +12,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.container.AsyncResponse;
 import javax.ws.rs.container.Suspended;
 import javax.ws.rs.core.MediaType;
-import ArchonData.data.Artist;
-
-import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
-import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
 import java.util.List;
 
 /**
@@ -27,19 +23,7 @@ import java.util.List;
 @Path("/artist")
 public class ArtistResource {
 
-    private DataService db;
-
-    public ArtistResource() {
-        try {
-            Registry reg = LocateRegistry.getRegistry(main.port);
-            this.db = (DataService) reg.lookup("DataService");
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        } catch (NotBoundException e) {
-            e.printStackTrace();
-        }
-
-    }
+    private DataService db = DataResource.getClient();
 
     @POST
     @Path("/add")
