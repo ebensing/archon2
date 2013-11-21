@@ -1,6 +1,6 @@
 package archon2.remote;
 
-import ArchonData.main;
+import ArchonData.runner;
 import ArchonData.server.DataService;
 
 import java.rmi.NotBoundException;
@@ -18,8 +18,8 @@ public class DataResource {
 
     static {
         try {
-            Registry reg = LocateRegistry.getRegistry(main.PORT);
-            client = (DataService)reg.lookup(main.NAME);
+            Registry reg = LocateRegistry.getRegistry(runner.PORT);
+            client = (DataService)reg.lookup(runner.NAME);
         } catch (RemoteException e) {
             e.printStackTrace();
         } catch (NotBoundException e) {

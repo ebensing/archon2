@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d79a560c-18bf-4484-8b07-9457f28a8ebe" name="Default" comment="Added security features">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/keystore_server" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/archon2/resources/AuthFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/BaseData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/archon2/remote/DataResource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mindrot_jbcrypt_0_3m.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server.cert" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ArchonData/ArchonData.iml" afterPath="$PROJECT_DIR$/../ArchonData/ArchonData.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/Artist.java" afterPath="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/Artist.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" afterPath="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java" afterPath="$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/server/DataServer.java" afterPath="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/server/DataServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/server/DataService.java" afterPath="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/server/DataService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/EJ.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/EJ.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/archon2/Main.java" afterPath="$PROJECT_DIR$/src/main/java/archon2/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/MongoResource.java" afterPath="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/MongoResource.java" />
+    <list default="true" id="d79a560c-18bf-4484-8b07-9457f28a8ebe" name="Default" comment="Added user model and tests">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/archon2/remote/DataResource.java" afterPath="$PROJECT_DIR$/src/main/java/archon2/remote/DataResource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ArchonData/src/test/java/ArchonData/ServiceTest.java" afterPath="$PROJECT_DIR$/../ArchonData/src/test/java/ArchonData/ServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/archon2.iml" afterPath="$PROJECT_DIR$/archon2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/main.java" afterPath="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ArchonData/pom.xml" afterPath="$PROJECT_DIR$/../ArchonData/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="Z:\Projects\ArchonData\src\main\java\ArchonData\main.java" afterPath="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/runner.java" />
     </list>
     <ignored path="archon2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +17,7 @@
     <file path="/ArtistResource.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1385044469636" ignored="false" />
     <file path="/pom.xml" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1385001549315" ignored="false" />
     <file path="/Main.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384998404105" ignored="false" />
-    <file path="/Dummy.txt" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1385056367420" ignored="false" />
+    <file path="/Dummy.txt" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1385056645017" ignored="false" />
     <file path="/ArtistTest.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1385044960655" ignored="false" />
     <file path="/JsonArtist.java" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384180599892" ignored="false" />
     <file path="/a.dummy" changelist="d79a560c-18bf-4484-8b07-9457f28a8ebe" time="1384212736550" ignored="false" />
@@ -121,32 +106,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="AuthFilter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/AuthFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="51" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Artist.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/Artist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="3" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthFilter.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/AuthFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="51" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.35924006">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataResource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/archon2/remote/DataResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="43" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0">
+            <state line="33" column="5" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,6 +132,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="2" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ArchonData/src/test/java/ArchonData/ServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="281" column="8" selection-start="7608" selection-end="7608" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,41 +164,28 @@
       <file leaf-file-name="MongoResource.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/MongoResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="12" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ArchonData/src/test/java/ArchonData/ServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="51" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="26" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0">
+            <state line="6" column="36" selection-start="169" selection-end="169" vertical-scroll-proportion="-4.08">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArtistTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java">
+      <file leaf-file-name="runner.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="8" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0">
+            <state line="28" column="36" selection-start="845" selection-end="845" vertical-scroll-proportion="0.6165803">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="42" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#getArtistByName#0;class#ArtistTest#0" expanded="false" />
+                <element signature="e#496#534#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -230,6 +202,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ArtistTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="8" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getArtistByName#0;class#ArtistTest#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -238,7 +222,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../ArchonData" />
   </component>
   <component name="GitLogSettings">
     <option name="myStructureFilterPaths" />
@@ -249,22 +233,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/BaseData.java" />
-        <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/MongoResource.java" />
         <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/util/PasswordEncryptionService.java" />
         <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/util/PasswordHash.java" />
         <option value="$PROJECT_DIR$/../ArchonData/pom.xml" />
         <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/server/DataService.java" />
         <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/server/DataServer.java" />
-        <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/User.java" />
         <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/Artist.java" />
         <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/main.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/remote/DataResource.java" />
-        <option value="$PROJECT_DIR$/../ArchonData/src/test/java/ArchonData/ServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/archon2/ArtistTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/resources/ArtistResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/archon2/resources/AuthFilter.java" />
+        <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/User.java" />
+        <option value="$PROJECT_DIR$/../ArchonData/src/test/java/ArchonData/ServiceTest.java" />
+        <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/MongoResource.java" />
+        <option value="$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/runner.java" />
       </list>
     </option>
   </component>
@@ -1122,7 +1106,15 @@
       <created>1384921163338</created>
       <updated>1384921163338</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added security features">
+      <created>1385056476431</created>
+      <updated>1385056476431</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added user model and tests">
+      <created>1385056654917</created>
+      <updated>1385056654917</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1149,7 +1141,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32628062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32628062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1163,7 +1155,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6002227" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6737194" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6737194" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997773" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29287305" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1213,7 +1205,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added security features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added user model and tests" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1243,6 +1235,7 @@
     <MESSAGE value="moved data code out to separate module" />
     <MESSAGE value="Finished adding support the API and tests" />
     <MESSAGE value="Added security features" />
+    <MESSAGE value="Added user model and tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1289,58 +1282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="16" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/BaseData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/Artist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="26" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/MongoResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="12" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ArchonData/src/test/java/ArchonData/ServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="51" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/archon2/remote/DataResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="43" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0">
@@ -1380,10 +1321,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/archon2/resources/AuthFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="51" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.35924006">
+        <state line="46" column="51" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/BaseData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/Artist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="5" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="42" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#496#534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ArchonData/src/test/java/ArchonData/ServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="281" column="8" selection-start="7608" selection-end="7608" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/data/MongoResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="36" selection-start="169" selection-end="169" vertical-scroll-proportion="-4.08">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ArchonData/src/main/java/ArchonData/runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="36" selection-start="845" selection-end="845" vertical-scroll-proportion="0.6165803">
+          <folding />
         </state>
       </provider>
     </entry>
